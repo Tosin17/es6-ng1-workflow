@@ -1,0 +1,17 @@
+// Colors and fonts should never be hard coded
+// This is just a basic work flow
+@import '../../css/variables';
+
+.main {
+  background: $background-light;
+  min-height: 100vh;
+  color: $dark-grey;
+  font-family: sans-serif;
+  margin-left: 11rem;
+  padding: 5rem 0 0 3rem;
+
+  &__header {
+    font-family: sans-serif;
+    font-size: $normal-font-size;
+  }
+}

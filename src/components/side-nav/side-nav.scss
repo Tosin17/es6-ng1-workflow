@@ -1,0 +1,29 @@
+@import '../../css/variables';
+
+.side-nav {
+  width: 11rem;
+  height: 100%;
+  position: fixed;
+  background: $background-dark;
+  color: $light-grey;
+
+  &__list {
+    list-style: none;
+    padding: 3rem 0 0 3rem;
+
+    &__item {
+      margin-bottom: 2rem;
+    }
+
+    &__item a {
+      color: $light-grey;
+      text-decoration: none;
+    }
+
+    &__item a:hover, a:active {
+      color: white;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+}
