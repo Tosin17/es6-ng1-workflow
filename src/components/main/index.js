@@ -1,6 +1,7 @@
 import angular from 'angular';
 import template from './main.html';
 import sideNav from '../side-nav';
+import registrationForm from '../registration-form';
 import './main.scss';
 
 function mainComponent() {
@@ -12,6 +13,9 @@ function mainComponent() {
 }
 
 export default angular
-  .module('main.component', [sideNav])
+  .module('main.component', [
+    sideNav,
+    registrationForm
+  ])
   .directive('mainComponent', mainComponent)
   .name;

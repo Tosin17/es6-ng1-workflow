@@ -1,0 +1,26 @@
+<form name="form" ng-submit="submitForm()" class="registration-form" novalidate>
+  <div class="registration-form__controls">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" ng-model="formValues.fname" required>
+  </div>
+  <div class="registration-form__controls">
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" ng-model="formValues.lname" required>
+  </div>
+  <div class="registration-form__controls">
+    <label for="password">Password</label>
+    <input type="text" id="password" ng-model="formValues.password" required>
+  </div>
+  <div class="registration-form__controls">
+    <label for="cords">Coordinates</label>
+    <select ng-model="formValues.cords" id="cords" required>
+      <option value="north">North</option>
+      <option value="east">East</option>
+      <option value="west">West</option>
+      <option value="south">South</option>
+    </select>
+  </div>
+  <div class="registration-form__controls">
+    <button ng-disabled="form.$invalid">Submit</button>
+  </div>
+</form>
