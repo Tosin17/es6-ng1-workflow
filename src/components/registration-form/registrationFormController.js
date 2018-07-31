@@ -9,7 +9,10 @@ export default class RegistrationFormController {
     };
 
     $scope.$watch('fileContent', val => {
-      console.log(val)
+      if (!val) {
+        return;
+      }
+      console.log(val);
     })
 
   }
