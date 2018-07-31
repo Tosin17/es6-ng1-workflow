@@ -4,9 +4,9 @@ function textFileReader() {
   return {
     restrict: 'A',
     scope: {
-      fileReader: '='
+      fileReader: '=textFileReader'
     },
-    link: (scope, elem) => {
+    link: ($scope, elem) => {
       elem.on('change', evt => {
         const file = evt.target.files;
 
@@ -14,7 +14,9 @@ function textFileReader() {
           const reader = new FileReader();
           reader.onload = evt => {
             const content = evt.target.result;
-            console.log(content);
+            $scope.$apply(() => {
+              $scope.fileReader = content;
+            })
           };
           reader.readAsText(file[0]);
         }

@@ -20,8 +20,9 @@
       <option value="south">South</option>
     </select>
   </div>
-  <input type="file" text-file-reader="" />
+  <input type="file" text-file-reader="fileContent" />
   <div class="registration-form__controls">
     <button ng-disabled="form.$invalid">Submit</button>
   </div>
+  <div>{{fileContent}}</div>
 </form>

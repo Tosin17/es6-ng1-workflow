@@ -1,6 +1,7 @@
 export default class RegistrationFormController {
   constructor($scope, $timeout) {
     $scope.formValues = {};
+    $scope.fileContent = null;
 
     $scope.submitForm = () => {
       $timeout(() => this
