@@ -11,6 +11,7 @@ function textFileReader() {
         const file = evt.target.files;
 
         if (file.length) {
+          // Use the file API
           const reader = new FileReader();
           reader.onload = evt => {
             const content = evt.target.result;

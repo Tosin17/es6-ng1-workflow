@@ -6,7 +6,11 @@ export default class RegistrationFormController {
     $scope.submitForm = () => {
       $timeout(() => this
         .submit($scope.formValues), 500);
-    }
+    };
+
+    $scope.$watch('fileContent', val => {
+      console.log(val)
+    })
 
   }
 
