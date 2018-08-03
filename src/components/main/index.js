@@ -4,6 +4,9 @@ import sideNav from '../side-nav';
 import registrationForm from '../registration-form';
 import textFileReader from '../text-file-reader';
 import flashBanner from  '../flash-banner';
+import weatherService from '../../services/weather-service'
+import fileService from '../../services/file-service'
+import  loader from '../loader'
 import './main.scss';
 
 function mainComponent() {
@@ -19,7 +22,10 @@ export default angular
     sideNav,
     registrationForm,
     textFileReader,
-    flashBanner
+    flashBanner,
+    weatherService,
+    fileService,
+    loader
   ])
   .directive('mainComponent', mainComponent)
   .name;

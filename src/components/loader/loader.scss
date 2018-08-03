@@ -1,0 +1,33 @@
+.loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  animation: hue 4s linear infinite;
+
+  &__circle {
+    animation: stroke 0.8s linear infinite;
+  }
+}
+
+@keyframes stroke {
+  0% {
+    stroke-dasharray: 10, 84;
+  }
+  50% {
+    stroke-dasharray: 84, 10;
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dasharray: 10, 84;
+    stroke-dashoffset: -94;
+  }
+}
+
+@keyframes hue {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
