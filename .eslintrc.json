@@ -7,26 +7,6 @@
     "ecmaVersion": "2015",
     "sourceType": "module"
   },
-  "globals": {
-    "POLL_INTERVAL": true,
-    "afterEach": true,
-    "beforeAll": true,
-    "beforeEach": true,
-    "customMatchers": true,
-    "describe": true,
-    "expect": true,
-    "fdescribe": true,
-    "fit": true,
-    "google": true,
-    "inject": true,
-    "it": true,
-    "jasmine": true,
-    "spyOn": true,
-    "stubs": true,
-    "testDirectiveExists": true,
-    "xdescribe": true,
-    "xit": true
-  },
   "rules": {
     "block-spacing": ["error", "always"],
     "function-paren-newline": ["error", "multiline"],
